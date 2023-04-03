@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Challenge_Chapter3_TanpaNavigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="titleFragmentAbjad">Word</string>
+    <string name="titleFragmentKata">Word that starts with</string>
+</resources>
