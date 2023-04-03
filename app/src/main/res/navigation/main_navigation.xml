@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/fragmentAbjad">
+
+    <fragment
+        android:id="@+id/fragmentAbjad"
+        android:name="com.example.challenge_chapter3_dengannavigation.FragmentAbjad"
+        android:label="fragment_abjad"
+        tools:layout="@layout/fragment_abjad" >
+        <action
+            android:id="@+id/action_fragmentAbjad_to_fragmentKata"
+            app:destination="@id/fragmentKata" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentKata"
+        android:name="com.example.challenge_chapter3_dengannavigation.FragmentKata"
+        android:label="fragment_kata"
+        tools:layout="@layout/fragment_kata">
+        <argument
+            android:name="abjad"
+            app:argType="string" />
+
+        <!--        <deepLink-->
+        <!--            android:id="@+id/deepLink"-->
+        <!--            app:action="ACTION_VIEW"-->
+        <!--            app:mimeType="text/html"-->
+        <!--            app:uri="https://www.google.com/search?q={kata}+arti"/>-->
+    </fragment>
+</navigation>
